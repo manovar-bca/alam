@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BCAhub</title>
+  <title>BCAHUB</title>
   <style>
     * {
       margin: 0;
@@ -113,7 +113,7 @@
 
     /* MAIN CONTENT */
     .main {
-      padding: 30px;
+      padding: 20px;
       margin-top: 130px;
     }
 
@@ -126,12 +126,11 @@
       border-radius: 10px;
       text-decoration: none;
     }
-
-    /* CALCULATOR MENU */
+/* CALCULATOR MENU */
     .calculator-menu {
       background-color: #fff;
       height: 350px;
-      width: 350px;
+      width: 510px;
       border: none;
       margin-left: 10px;
       padding: 30px;
@@ -195,7 +194,7 @@
   <!-- HEADER -->
   <header>
     <div class="sidebar-toggle" onclick="toggleSidebar()">☰</div>
-    <div class="logo">BCA-HUB</div>
+    <div class="logo">BCAHUB</div>
     <div class="search-container">
       <input type="text" id="search-bar" placeholder="Search..." />
     </div>
@@ -203,10 +202,9 @@
 
   <!-- SCROLLABLE LINKS -->
   <div class="scrollable-links">
-    <a href="#cal">All Calculator</a>
-    <a href="#mcq">All Quiz</a>
+    <a href="index.html">home</a>
     <a href="#">C</a>
-    <a href="mcc/index.html">C++</a>
+    <a href="#">C++</a>
     <a href="#">Java</a>
     <a href="#">Python</a>
     <a href="#">NodeJS</a>
@@ -215,44 +213,41 @@
     <a href="#">More</a>
   </div>
 
-
-       
   <!-- SIDEBAR -->
   <div class="sidebar" id="sidebar">
-  <a href="c cons.html">C </a>
+   <a href="c cons.html">C </a>
   <br>
-      <a href="index.html">HOME</a>
-      <a href="c.html">C </a>
-        <a href="mcc/cvc.html">C++</a>
-        <a href="">C variables</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-
-         <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        
+           <a href="index.html">HOME</a>
+      <a href="gst.html">GST CALCULATOR</a>
+        <a href="emi.html">EMI CALCULATOR</a>
+        <a href="bmi.html">BMI CALCULATOR</a>
+        <a href="sip.html">SIP CALCULATOR</a>
+        <a href="age.html">AGE CALCULATOR</a>
+        <a href="per.html">Percentage CALCULATOR</a>
+        <a href="dis.html">Discount CALCULATOR</a>
   </div>
 
   <!-- MAIN CONTENT -->
-   
   <div class="main">
-        <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
+          <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
+     <!-- EMI Calculator -->
    
-<br>
-<br>
+   <section class="calc-section">
+    <h2 id="emi">2 EMI Calculator</h2>
+    <p>The EMI (Equated Monthly Installment) Calculator helps you estimate your monthly loan repayment amount based on the loan amount, interest rate, and tenure. It is useful for home, car, and personal loans.</p>
+    <input type="number" id="loanAmount" placeholder="Loan Amount (₹)">
+    <input type="number" id="interestRate" placeholder="Interest Rate (%)">
+    <input type="number" id="loanTenure" placeholder="Tenure (months)">
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <div id="emiResult"></div>
+  </section>
+
+
     <!-- Calculator Menu -->
-    <div id="cal" class="calculator-menu">
+     
+  <div class="calculator-menu">
+    <h1 style="background-color: darkgoldenrod;">Our Calculator Tools</h1>
+    <br>
       <ul>
         <li><a href="gst.html">1 GST Calculator</a></li>
         <li><a href="emi.html">2 EMI Calculator</a></li>
@@ -265,16 +260,79 @@
     </div>
     <br>
     <br>
-      <div id="mcq" class="calculator-menu">
-      <ul>
-        <li><a href="mcq/ccc.html">1 C++ Quiz</a></li>
-        <li><a href="mcq/data.html">2 DATA Structure Quiz</a></li>
-        <li><a href="mcq/dbms.html">3 DBMS Quiz</a></li>
-        <li><a href="mcq/netw.html">4 Networking Quiz</a></li>
-        <li><a href="mcq/os.html">5 OS Quiz</a></li>
-        
-      </ul>
-    </div>
+    <style>
+  .calculator-menu {
+    background-color: #fff;
+    height: 350px;
+    width: 350px;
+    border: none;
+    margin-left: 50pxpx;
+    padding: 20px;
+    overflow-y: auto;
+    cursor: default;
+  }
+
+  .calculator-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .calculator-menu li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin: 5px 0;
+    transition: color 0.2s;
+  }
+
+  .calculator-menu li a:hover {
+    color: #007BFF;
+  }
+</style>
+<br>
+<br>
+
+        <style>
+            .calc-section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.calc-section h2 {
+  margin-bottom: 15px;
+}
+.calc-section input, .calc-section select, .calc-section button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+.calc-section button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.calc-section button:hover {
+  background-color: #005bb5;
+}
+
+        </style>
+     
+ 
+       
+
+
+<script>function calculateEMI() {
+  let P = parseFloat(document.getElementById("loanAmount").value);
+  let R = parseFloat(document.getElementById("interestRate").value) / 12 / 100;
+  let N = parseInt(document.getElementById("loanTenure").value);
+  if (isNaN(P) || isNaN(R) || isNaN(N)) return document.getElementById("emiResult").innerText = "Enter valid values";
+  let emi = (P * R * Math.pow(1 + R, N)) / (Math.pow(1 + R, N) - 1);
+  document.getElementById("emiResult").innerHTML = `Monthly EMI: ₹${emi.toFixed(2)}`;
+}</script>
 
   </div>
 
@@ -290,10 +348,6 @@
       sidebar.classList.toggle('show');
     }
   </script>
-
-
-
-
 
 </body>
 </html>

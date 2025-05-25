@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BCAhub</title>
+  <title>BCAHUB</title>
   <style>
     * {
       margin: 0;
@@ -113,7 +113,7 @@
 
     /* MAIN CONTENT */
     .main {
-      padding: 30px;
+      padding: 20px;
       margin-top: 130px;
     }
 
@@ -127,11 +127,11 @@
       text-decoration: none;
     }
 
-    /* CALCULATOR MENU */
+   /* CALCULATOR MENU */
     .calculator-menu {
       background-color: #fff;
       height: 350px;
-      width: 350px;
+      width: 510px;
       border: none;
       margin-left: 10px;
       padding: 30px;
@@ -160,15 +160,6 @@
      color: brown;
     }
 
-    /* FOOTER */
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      
-      margin-top: 50px;
-    }
 
     /* DESKTOP STYLES */
     @media (min-width: 768px) {
@@ -203,10 +194,9 @@
 
   <!-- SCROLLABLE LINKS -->
   <div class="scrollable-links">
-    <a href="#cal">All Calculator</a>
-    <a href="#mcq">All Quiz</a>
+    <a href="index.html">home</a>
     <a href="#">C</a>
-    <a href="mcc/index.html">C++</a>
+    <a href="#">C++</a>
     <a href="#">Java</a>
     <a href="#">Python</a>
     <a href="#">NodeJS</a>
@@ -215,44 +205,42 @@
     <a href="#">More</a>
   </div>
 
-
-       
   <!-- SIDEBAR -->
   <div class="sidebar" id="sidebar">
-  <a href="c cons.html">C </a>
+   <a href="c cons.html">C </a>
   <br>
-      <a href="index.html">HOME</a>
-      <a href="c.html">C </a>
-        <a href="mcc/cvc.html">C++</a>
-        <a href="">C variables</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-
-         <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        
+            <a href="index.html">HOME</a>
+      <a href="gst.html">GST CALCULATOR</a>
+        <a href="emi.html">EMI CALCULATOR</a>
+        <a href="bmi.html">BMI CALCULATOR</a>
+        <a href="sip.html">SIP CALCULATOR</a>
+        <a href="age.html">AGE CALCULATOR</a>
+        <a href="per.html">Percentage CALCULATOR</a>
+        <a href="dis.html">Discount CALCULATOR</a>
   </div>
 
   <!-- MAIN CONTENT -->
-   
+
   <div class="main">
-        <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
-   
-<br>
-<br>
+          <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
+          <br>
+       <!-- Age Calculator -->
+  <section class="calc-section">
+    <h2 id="age">5 Age Calculator</h2>
+    <p>The Age Calculator computes your current age based on your date of birth. It is useful for official documentation, age verification, and general knowledge.
+
+</p>
+    <input type="date" id="dob">
+    <button onclick="calculateAge()">Calculate Age</button>
+    <div id="ageResult"></div>
+  </section>
+  <br>
+  
     <!-- Calculator Menu -->
-    <div id="cal" class="calculator-menu">
+     
+ <div class="calculator-menu">
+    <h1 style="background-color: darkgoldenrod;">Our Calculator Tools</h1>
+    <br>
       <ul>
         <li><a href="gst.html">1 GST Calculator</a></li>
         <li><a href="emi.html">2 EMI Calculator</a></li>
@@ -264,18 +252,46 @@
       </ul>
     </div>
     <br>
-    <br>
-      <div id="mcq" class="calculator-menu">
-      <ul>
-        <li><a href="mcq/ccc.html">1 C++ Quiz</a></li>
-        <li><a href="mcq/data.html">2 DATA Structure Quiz</a></li>
-        <li><a href="mcq/dbms.html">3 DBMS Quiz</a></li>
-        <li><a href="mcq/netw.html">4 Networking Quiz</a></li>
-        <li><a href="mcq/os.html">5 OS Quiz</a></li>
-        
-      </ul>
-    </div>
+<br>
+   <style>
+            .calc-section {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.calc-section h2 {
+  margin-bottom: 15px;
+}
+.calc-section input, .calc-section select, .calc-section button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+.calc-section button {
+  background-color: #0073e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.calc-section button:hover {
+  background-color: #005bb5;
+}
 
+        </style>
+ 
+
+    
+
+
+<script>function calculateAge() {
+  let dob = new Date(document.getElementById("dob").value);
+  if (!dob.getTime()) return document.getElementById("ageResult").innerText = "Enter valid date";
+  let diff = Date.now() - dob.getTime();
+  let age = new Date(diff).getUTCFullYear() - 1970;
+  document.getElementById("ageResult").innerText = `Your age is: ${age} years`;
+}</script>
   </div>
 
   <!-- FOOTER -->
@@ -290,10 +306,6 @@
       sidebar.classList.toggle('show');
     }
   </script>
-
-
-
-
 
 </body>
 </html>

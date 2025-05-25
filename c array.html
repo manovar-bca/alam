@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BCAhub</title>
+  <title>BCAHUB</title>
   <style>
     * {
       margin: 0;
@@ -113,7 +113,7 @@
 
     /* MAIN CONTENT */
     .main {
-      padding: 30px;
+      padding: 20px;
       margin-top: 130px;
     }
 
@@ -127,15 +127,14 @@
       text-decoration: none;
     }
 
-    /* CALCULATOR MENU */
+    /* CALCULATOR MENU *
     .calculator-menu {
       background-color: #fff;
       height: 350px;
       width: 350px;
       border: none;
-      margin-left: 10px;
-      padding: 30px;
-      font-size: 20px;
+      margin-left: 20px;
+      padding: 20px;
       overflow-y: auto;
       cursor: default;
     }
@@ -149,15 +148,13 @@
     .calculator-menu li a {
       display: block;
       text-decoration: none;
-       color: brown;
+      color: #333;
       margin: 5px 0;
       transition: color 0.2s;
-      text-decoration: none;
-      border-bottom: 1px solid #ccc;
     }
 
     .calculator-menu li a:hover {
-     color: brown;
+      color: #007BFF;
     }
 
     /* FOOTER */
@@ -203,10 +200,9 @@
 
   <!-- SCROLLABLE LINKS -->
   <div class="scrollable-links">
-    <a href="#cal">All Calculator</a>
-    <a href="#mcq">All Quiz</a>
+    <a href="index.html">home</a>
     <a href="#">C</a>
-    <a href="mcc/index.html">C++</a>
+    <a href="#">C++</a>
     <a href="#">Java</a>
     <a href="#">Python</a>
     <a href="#">NodeJS</a>
@@ -215,44 +211,146 @@
     <a href="#">More</a>
   </div>
 
-
-       
   <!-- SIDEBAR -->
   <div class="sidebar" id="sidebar">
   <a href="c cons.html">C </a>
   <br>
       <a href="index.html">HOME</a>
-      <a href="c.html">C </a>
-        <a href="mcc/cvc.html">C++</a>
-        <a href="">C variables</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
+      <a href="#int">C Introduction</a>
+        <a href="c array.html">C array</a>
+        <a href="c cons.html">constractor</a>
+        <a href="c data.html">c data type</a>
+        <a href="c fans.html">Functions</a>
+        <a href="c loop.html">c loop</a>
+        <a href="c operator.html">c operator</a>
+        <a href="c syntex.html">c syntex</a>
+        <a href="c operator.html">c pointer</a>
+        <a href="cstring.html">c string</a>
+        <a href="cvarable.html">c variable</a>
+        <a href="react.html"></a>
 
-         <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        
+         <a href="java.html"></a>
+        <a href="nodejs.html">n</a>
+        <a href="php.html">j</a>
+        <a href="python.html">p</a>
+        <a href="react.html">re</a>
   </div>
 
   <!-- MAIN CONTENT -->
-   
   <div class="main">
-        <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
-   
+                <h1>Arrays</h1>
+                <br>
+<p>Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.</p>
 <br>
+<p>To create an array, define the data type (like int) and specify the name of the array followed by square brackets [].</p>
 <br>
-    <!-- Calculator Menu -->
-    <div id="cal" class="calculator-menu">
+<p>To insert values to it, use a comma-separated list inside curly braces, and make sure all values are of the same data type:</p>
+<br>
+<pre style="background-color: #333; color: #f1f1f1;"><code>
+  int myNumbers[] = {25, 50, 75, 100};
+
+
+</code></pre>
+<br>
+<p>We have now created a variable that holds an array of four integers.</p>
+  <br>
+  <h2>Access the Elements of an Array</h2>
+  <br>
+   <p>To access an array element, refer to its index number.</p>
+   <p>Array indexes start with 0: [0] is the first element. [1] is the second element, etc.</p>
+   <p>This statement accesses the value of the first element [0] in myNumbers:</p>
+   <br>
+   <pre style="background-color: #333; color: #fff;"><code>
+    Example
+
+    int myNumbers[] = {25, 50, 75, 100};
+    printf("%d", myNumbers[0]);
+
+    //outputs 25
+
+   </code></pre>
+  <br>
+  <br>
+   <h1>Change an Array Element</h1>
+   <br>
+   <p>To change the value of a specific element, refer to the index number:</p>
+   <br>
+   <pre style="background: #333; color: #f1f1f1;"><code>
+    <h2>example</h2>
+    myNumbers[0] = 33;
+
+   </code></pre>
+  <br>
+   <pre style="background-color: #333; color: #f1f1f1;"><code>
+    <h2>Example</h2>
+    int myNumbers[] = {25, 50, 75, 100};
+     myNumbers[0] = 33;
+
+    printf("%d", myNumbers[0]);
+
+     // Now outputs 33 instead of 25
+   </code></pre>
+   <br>
+   <h1>Loop Through an Array</h1>
+   <br>
+   <p>You can loop through the array elements with the for loop.</p>
+   <br>
+   <p>The following example outputs all elements in the myNumbers array:</p>
+  <br>
+   <pre style="background-color: #333; color: #f1f1f1;"><code>
+    <h2>Example</h2>
+    int myNumbers[] = {25, 50, 75, 100};
+    int i;
+
+     for (i = 0; i < 4; i++) {
+     printf("%d\n", myNumbers[i]);
+        }
+
+   </code></pre>
+<br>
+   <h1>Set Array Size</h1>
+   <br>
+   <p>Another common way to create arrays, is to specify the size of the array, and add elements later:</p>
+
+<br>
+        <pre style="background-color: #333; color: #f1f1f1;"><code>
+            
+        <h2>Example</h2>
+
+    // Declare an array of four integers:
+      
+    int myNumbers[4];
+    s
+     // Add elements
+     myNumbers[0] = 25;
+     myNumbers[1] = 50;
+     myNumbers[2] = 75;
+     myNumbers[3] = 100;
+        </code></pre>
+        <br>
+     <p>Using this method, you should know the number of array elements in advance, in order for the program to store enough memory.</p>
+      <br>
+     <p>You are not able to change the size of the array after creation.</p>
+
+      <br>
+      <h1>Avoid Mixing Data Types</h1>
+      <br>
+      <p>It is important to note that all elements in an array must be of the same data type</p>
+      <br>
+      <p>This means you cannot mix different types of values, like integers and floating point numbers, in the same array:</p>
+      <br>
+      <pre style="background-color: #333; color: #f1f1f1;"><code>
+        <h2>Example</h2>
+
+       int myArray[] = {25, 50, 75, 3.15, 5.99};
+
+
+      </code></pre>
+                
+
+
+    <!-- Calculator Menu --
+    <div class="calculator-menu">
       <ul>
         <li><a href="gst.html">1 GST Calculator</a></li>
         <li><a href="emi.html">2 EMI Calculator</a></li>
@@ -262,20 +360,7 @@
         <li><a href="per.html">6 Percentage Calculator</a></li>
         <li><a href="dis.html">7 Discount Calculator</a></li>
       </ul>
-    </div>
-    <br>
-    <br>
-      <div id="mcq" class="calculator-menu">
-      <ul>
-        <li><a href="mcq/ccc.html">1 C++ Quiz</a></li>
-        <li><a href="mcq/data.html">2 DATA Structure Quiz</a></li>
-        <li><a href="mcq/dbms.html">3 DBMS Quiz</a></li>
-        <li><a href="mcq/netw.html">4 Networking Quiz</a></li>
-        <li><a href="mcq/os.html">5 OS Quiz</a></li>
-        
-      </ul>
-    </div>
-
+    </div>-->
   </div>
 
   <!-- FOOTER -->
@@ -290,10 +375,6 @@
       sidebar.classList.toggle('show');
     }
   </script>
-
-
-
-
 
 </body>
 </html>

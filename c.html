@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BCAhub</title>
+  <title>BCAHUB</title>
   <style>
     * {
       margin: 0;
@@ -113,7 +113,7 @@
 
     /* MAIN CONTENT */
     .main {
-      padding: 30px;
+      padding: 20px;
       margin-top: 130px;
     }
 
@@ -127,15 +127,14 @@
       text-decoration: none;
     }
 
-    /* CALCULATOR MENU */
+    /* CALCULATOR MENU *
     .calculator-menu {
       background-color: #fff;
       height: 350px;
       width: 350px;
       border: none;
-      margin-left: 10px;
-      padding: 30px;
-      font-size: 20px;
+      margin-left: 20px;
+      padding: 20px;
       overflow-y: auto;
       cursor: default;
     }
@@ -149,15 +148,13 @@
     .calculator-menu li a {
       display: block;
       text-decoration: none;
-       color: brown;
+      color: #333;
       margin: 5px 0;
       transition: color 0.2s;
-      text-decoration: none;
-      border-bottom: 1px solid #ccc;
     }
 
     .calculator-menu li a:hover {
-     color: brown;
+      color: #007BFF;
     }
 
     /* FOOTER */
@@ -203,10 +200,9 @@
 
   <!-- SCROLLABLE LINKS -->
   <div class="scrollable-links">
-    <a href="#cal">All Calculator</a>
-    <a href="#mcq">All Quiz</a>
+    <a href="index.html">home</a>
     <a href="#">C</a>
-    <a href="mcc/index.html">C++</a>
+    <a href="#">C++</a>
     <a href="#">Java</a>
     <a href="#">Python</a>
     <a href="#">NodeJS</a>
@@ -215,44 +211,95 @@
     <a href="#">More</a>
   </div>
 
-
-       
   <!-- SIDEBAR -->
   <div class="sidebar" id="sidebar">
-  <a href="c cons.html">C </a>
+   <a href="c cons.html">C </a>
   <br>
       <a href="index.html">HOME</a>
-      <a href="c.html">C </a>
-        <a href="mcc/cvc.html">C++</a>
-        <a href="">C variables</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
+      <a href="c.html">C Introduction</a>
+        <a href="c array.html">C array</a>
+        <a href="c cons.html">constractor</a>
+        <a href="c data.html">c data type</a>
+        <a href="c fans.html">Functions</a>
+        <a href="c loop.html">c loop</a>
+        <a href="c operator.html">c operator</a>
+        <a href="c syntex.html">c syntex</a>
+        <a href="c operator.html">c pointer</a>
+        <a href="cstring.html">c string</a>
+        <a href="cvarable.html">c variable</a>
+        <a href="react.html"></a>
 
-         <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        
+         <a href="java.html"></a>
+        <a href="nodejs.html">n</a>
+        <a href="php.html">j</a>
+        <a href="python.html">p</a>
+        <a href="react.html">re</a>
   </div>
 
   <!-- MAIN CONTENT -->
-   
   <div class="main">
         <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
-   
+    <br>
+    <h1>C Tutorial</h1>
+  <br>
+ 
+
+    <h1 id="int">What is C?</h1>
+    <br>
+    <p>C is a general-purpose, procedural programming language developed by Dennis Ritchie at Bell Labs in 1972. Initially created for system programming, it has become foundational for modern software development.</p>
+    <br>
+    <p>It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.</p>
+    <br>
+    <p>C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
 <br>
 <br>
-    <!-- Calculator Menu -->
-    <div id="cal" class="calculator-menu">
+    <h1>Why Learn C?</h1>
+    <br>
+    <p>It is one of the most popular programming languages in the world</p>
+    <br>
+    <p>If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar</p>
+    
+    <br><p>C is very fast, compared to other programming languages, like Java and Python</p>
+    <p>C is very versatile; it can be used in both applications and technologies</p>
+
+<br>
+<br>
+    <h1>Difference between C and C++</h1>
+    <br>
+    <p>C++ was developed as an extension of C, and both languages have almost the same syntax</p>
+    <br>
+    <p>The main difference between C and C++ is that C++ supports classes and objects, while C does not.</p>
+    <br>
+    <br>
+    <h1>Get Started</h1>
+    <br>
+    <p>This tutorial will teach you the basics of C.</p>
+    <br>
+    <p>When you are finished with this tutorial, you will be able to write C programs and create real-life examples.</p>
+    <br>
+    <p>It is not necessary to have any prior programming experience</p>
+    <br>
+    <br>
+    
+    <pre style="background-color: #333; color: #f1f1f1;"></code>
+      <h1>Example</h1>
+      #include < stdio.h>
+    int main() {
+      printf("hello world");
+      return 0;
+    }
+
+  </code></pre>
+
+
+
+
+ 
+                
+
+
+    <!-- Calculator Menu --
+    <div class="calculator-menu">
       <ul>
         <li><a href="gst.html">1 GST Calculator</a></li>
         <li><a href="emi.html">2 EMI Calculator</a></li>
@@ -262,20 +309,7 @@
         <li><a href="per.html">6 Percentage Calculator</a></li>
         <li><a href="dis.html">7 Discount Calculator</a></li>
       </ul>
-    </div>
-    <br>
-    <br>
-      <div id="mcq" class="calculator-menu">
-      <ul>
-        <li><a href="mcq/ccc.html">1 C++ Quiz</a></li>
-        <li><a href="mcq/data.html">2 DATA Structure Quiz</a></li>
-        <li><a href="mcq/dbms.html">3 DBMS Quiz</a></li>
-        <li><a href="mcq/netw.html">4 Networking Quiz</a></li>
-        <li><a href="mcq/os.html">5 OS Quiz</a></li>
-        
-      </ul>
-    </div>
-
+    </div>-->
   </div>
 
   <!-- FOOTER -->
@@ -290,10 +324,6 @@
       sidebar.classList.toggle('show');
     }
   </script>
-
-
-
-
 
 </body>
 </html>

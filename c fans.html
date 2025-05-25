@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BCAhub</title>
+  <title>BCAHUB</title>
   <style>
     * {
       margin: 0;
@@ -113,7 +113,7 @@
 
     /* MAIN CONTENT */
     .main {
-      padding: 30px;
+      padding: 20px;
       margin-top: 130px;
     }
 
@@ -127,15 +127,14 @@
       text-decoration: none;
     }
 
-    /* CALCULATOR MENU */
+    /* CALCULATOR MENU *
     .calculator-menu {
       background-color: #fff;
       height: 350px;
       width: 350px;
       border: none;
-      margin-left: 10px;
-      padding: 30px;
-      font-size: 20px;
+      margin-left: 20px;
+      padding: 20px;
       overflow-y: auto;
       cursor: default;
     }
@@ -149,15 +148,13 @@
     .calculator-menu li a {
       display: block;
       text-decoration: none;
-       color: brown;
+      color: #333;
       margin: 5px 0;
       transition: color 0.2s;
-      text-decoration: none;
-      border-bottom: 1px solid #ccc;
     }
 
     .calculator-menu li a:hover {
-     color: brown;
+      color: #007BFF;
     }
 
     /* FOOTER */
@@ -203,10 +200,9 @@
 
   <!-- SCROLLABLE LINKS -->
   <div class="scrollable-links">
-    <a href="#cal">All Calculator</a>
-    <a href="#mcq">All Quiz</a>
+    <a href="index.html">home</a>
     <a href="#">C</a>
-    <a href="mcc/index.html">C++</a>
+    <a href="#">C++</a>
     <a href="#">Java</a>
     <a href="#">Python</a>
     <a href="#">NodeJS</a>
@@ -215,44 +211,177 @@
     <a href="#">More</a>
   </div>
 
-
-       
   <!-- SIDEBAR -->
   <div class="sidebar" id="sidebar">
-  <a href="c cons.html">C </a>
+   <a href="c cons.html">C </a>
   <br>
       <a href="index.html">HOME</a>
-      <a href="c.html">C </a>
-        <a href="mcc/cvc.html">C++</a>
-        <a href="">C variables</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
+      <a href="#int">C Introduction</a>
+        <a href="c array.html">C array</a>
+        <a href="c cons.html">constractor</a>
+        <a href="c data.html">c data type</a>
+        <a href="c fans.html">Functions</a>
+        <a href="c loop.html">c loop</a>
+        <a href="c operator.html">c operator</a>
+        <a href="c syntex.html">c syntex</a>
+        <a href="c operator.html">c pointer</a>
+        <a href="cstring.html">c string</a>
+        <a href="cvarable.html">c variable</a>
+        <a href="react.html"></a>
 
-         <a href="java.html">java</a>
-        <a href="nodejs.html">nodejs</a>
-        <a href="php.html">php</a>
-        <a href="python.html">python</a>
-        <a href="react.html">react</a>
-        
+         <a href="java.html"></a>
+        <a href="nodejs.html">n</a>
+        <a href="php.html">j</a>
+        <a href="python.html">p</a>
+        <a href="react.html">re</a>
   </div>
 
   <!-- MAIN CONTENT -->
-   
   <div class="main">
-        <h1 style="background-color: cornflowerblue; text-align: center; font-size: 40px;">BCA-HUB</h1>
-   
+    
+    <br>
+    <br>
+     <h1>🧩 Types of Functions in C</h1>
 <br>
 <br>
-    <!-- Calculator Menu -->
-    <div id="cal" class="calculator-menu">
+<h2>1. Library Functions</h2>
+<br>
+<p>These are built-in functions provided by C's standard library. They perform common tasks and are readily available for use.</p>
+<br>
+<pre style="background-color: #333;color: #f1f1f1;"><code>
+  <h2>example</h2>
+  #include <stdio.h>
+#include <math.h>
+
+ int main() {
+    double number = 49;
+    double result = sqrt(number);  // sqrt() is a library function
+    printf("Square root of %.2f is %.2f\n", number, result);
+    return 0;
+ }
+
+<h2>output</h2>
+ csharp
+  Square root of 49.00 is 7.00
+
+</code></pre>
+<br>
+<br>
+<h2>2. User-Defined Functions</h2>
+<br>
+<p>These are functions created by the programmer to perform specific tasks.</p>
+<br>
+<pre style="background-color: #333;color: #f1f1f1;"><code>
+  <h2>example</h2>
+
+  #include <stdio.h>
+
+ int add(int a, int b) {
+    return a + b;
+ }
+
+ int main() {
+    int sum = add(5, 3);  // add() is a user-defined function
+    printf("Sum is: %d\n", sum);
+    return 0;
+ }
+
+</code></pre>
+<br>
+<br>
+<h1>🔄 Types of Functions Based on Arguments and Return Values</h1>
+<br>
+<p>Functions can be categorized into four types:</p>
+<br>
+<p>1. Function with Arguments and Return Value</p>
+<br>
+<pre style="background-color: #333;color: #f1f1f1;"><code>
+  #include <stdio.h>
+
+ int multiply(int a, int b) {
+    return a * b;
+ }
+
+  int main() {
+    int result = multiply(4, 3);
+    printf("Product is: %d\n", result);
+    return 0;
+   }
+  <h2>output</h2>
+   Product is: 12
+
+</code></pre>
+<br>
+<p>2. Function with Arguments and No Return Value</p>
+<br>
+<pre style="background-color: #333;color: #f1f1f1;"><code>
+  #include <stdio.h>
+
+   void printSum(int a, int b) {
+    printf("Sum is: %d\n", a + b);
+  }
+
+  int main() {
+    printSum(5, 3);
+    return 0;
+  }
+  <h2>output</h2>
+  Sum is: 8
+
+</code></pre>
+<br>
+<br>
+<h2>3. Function with No Arguments but with Return Value</h2>
+<br>
+<pre style="background-color: #333;color: #f1f1f1;"><code>
+  #include <stdio.h>
+
+  int getNumber() {
+    return 42;
+  }
+
+   int main() {
+    int num = getNumber();
+    printf("Number is: %d\n", num);
+    return 0; 
+   }
+  <h2>output</h2>
+  Number is: 42
+
+</code></pre>
+<br>
+<br>
+<h2>4. Function with No Arguments and No Return Value</h2>
+<br>
+<pre style="background-color: #333;color: #f1f1f1;"><code>
+  #include <stdio.h>
+
+  void greet() {
+    printf("Hello, World!\n");
+  }
+
+  int main() {
+    greet();
+    return 0;
+  }
+
+   <h2>output</h2>
+  Hello, World!
+
+</code></pre>
+<br>
+<br>
+<h1>🧪 Practice Questions</h1>
+<br>
+<p>1 Write a function to calculate the factorial of a number.</p>
+<br>
+<p>2 Create a function to check if a number is prime.</p>
+<br>
+<p>3 Implement a function to reverse a string.</p>
+
+
+    <!-- Calculator Menu --
+    <div class="calculator-menu">
       <ul>
         <li><a href="gst.html">1 GST Calculator</a></li>
         <li><a href="emi.html">2 EMI Calculator</a></li>
@@ -262,20 +391,7 @@
         <li><a href="per.html">6 Percentage Calculator</a></li>
         <li><a href="dis.html">7 Discount Calculator</a></li>
       </ul>
-    </div>
-    <br>
-    <br>
-      <div id="mcq" class="calculator-menu">
-      <ul>
-        <li><a href="mcq/ccc.html">1 C++ Quiz</a></li>
-        <li><a href="mcq/data.html">2 DATA Structure Quiz</a></li>
-        <li><a href="mcq/dbms.html">3 DBMS Quiz</a></li>
-        <li><a href="mcq/netw.html">4 Networking Quiz</a></li>
-        <li><a href="mcq/os.html">5 OS Quiz</a></li>
-        
-      </ul>
-    </div>
-
+    </div>-->
   </div>
 
   <!-- FOOTER -->
@@ -290,10 +406,6 @@
       sidebar.classList.toggle('show');
     }
   </script>
-
-
-
-
 
 </body>
 </html>
